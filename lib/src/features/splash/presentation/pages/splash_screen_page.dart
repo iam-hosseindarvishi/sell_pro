@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sell_pro/src/core/styles/app_text_style.dart';
-import 'package:sell_pro/src/features/login/presentation/pages/login_page.dart';
+import 'package:sell_pro/src/features/auth/pages/login_page.dart';
+import 'package:sell_pro/src/features/auth/pages/register_page.dart';
+import 'package:sell_pro/src/shared/widgets/start_app_bar.dart';
 
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({super.key});
@@ -9,17 +11,9 @@ class SplashScreenPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "شروع",
-            style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Theme.of(context).secondaryHeaderColor,
-                fontSize: 25.0),
-          ),
-          centerTitle: true,
-          backgroundColor: Theme.of(context).primaryColorDark,
-          elevation: 5,
+        appBar: StartAppBar(
+          title: "شروع",
+          elevation: 1,
         ),
         body: Center(
           child: Padding(
@@ -58,18 +52,11 @@ class SplashScreenPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                     onPressed: () {
-                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                        backgroundColor: Colors.red,
-                        content: Center(
-                            child: Text(
-                          "این ویژگی در نسخه های بعدی فعال میشود",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18.00),
-                        )),
-                        behavior: SnackBarBehavior.floating,
-                      ));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const RegisterPage(),
+                          ));
                     },
                     child: const Text(
                       "ایجاد حساب کاربری جدید",
