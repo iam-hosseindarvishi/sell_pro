@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sell_pro/src/features/splash/presentation/views/splash_screen_veiw.dart';
+
+import 'src/features/splash/presentation/pages/splash_screen_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,10 +31,10 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const SplashScreenView(),
+      home: const SplashScreenPage(),
     );
   }
 }
