@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'image_picker_button.dart';
 import 'package:image_picker/image_picker.dart';
 
+// ignore: must_be_immutable
 class ImagePickerDiolog extends StatelessWidget {
-  ImagePicker _imagePicker = ImagePicker();
+  final ImagePicker _imagePicker = ImagePicker();
   ImagePickerDiolog({
     super.key,
   });
@@ -19,15 +20,19 @@ class ImagePickerDiolog extends StatelessWidget {
           children: [
             // import from gallery
             ImagePickerButton(
-              onTab: () {
-                _imagePicker.pickImage(source: ImageSource.gallery);
+              handleTab: () {
+                _imagePicker.pickImage(source: ImageSource.camera);
               },
               text: "دوربین",
               icon: Icons.photo_camera,
             ),
             // import from camera
             ImagePickerButton(
-                text: "گالری", icon: Icons.photo_library, onTab: () {}),
+                text: "گالری",
+                icon: Icons.photo_library,
+                handleTab: () {
+                  _imagePicker.pickImage(source: ImageSource.gallery);
+                }),
           ],
         ),
       ),
