@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sell_pro/src/shared/widgets/start_app_bar.dart';
-
 import '../../../shared/widgets/app_text_field.dart';
+import '../widgets/logo_image_picker.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -21,74 +21,7 @@ class RegisterPage extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(children: [
                   // iamge or logo picker
-                  InkWell(
-                    child: Container(
-                      width: 80.0,
-                      height: 80.0,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          border: Border.all(
-                              width: 2,
-                              color: Theme.of(context).colorScheme.secondary)),
-                      child: Center(
-                        child: Icon(
-                          size: 50.0,
-                          Icons.camera_alt,
-                          color: Theme.of(context).primaryColor,
-                        ),
-                      ),
-                    ),
-                    onTap: () {
-                      showDialog(
-                        context: context,
-                        builder: (context) {
-                          return Dialog(
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 10.0, horizontal: 10.0),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                children: [
-                                  // import from gallery
-                                  InkWell(
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Icon(
-                                          size: 50.0,
-                                          Icons.photo_camera,
-                                          color: Theme.of(context).primaryColor,
-                                        ),
-                                        const Text("دوربین")
-                                      ],
-                                    ),
-                                  ),
-                                  // import from camera
-                                  InkWell(
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Icon(
-                                          size: 50.0,
-                                          Icons.photo_library,
-                                          color: Theme.of(context).primaryColor,
-                                        ),
-                                        const Text("گالری")
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          );
-                        },
-                      );
-                    },
-                  ),
+                  const ImagePicker(),
                   const SizedBox(height: 60.0),
                   // shop name field
                   AppTextField(
