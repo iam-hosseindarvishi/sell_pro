@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sell_pro/src/core/styles/app_text_style.dart';
-import 'package:sell_pro/src/features/auth/pages/login_page.dart';
-import 'package:sell_pro/src/features/auth/pages/register_page.dart';
+import 'package:sell_pro/src/features/auth/presentation/screens/login_page.dart';
+import 'package:sell_pro/src/features/auth/presentation/screens/register_page.dart';
+import 'package:sell_pro/src/features/home/presentation/screens/home.dart';
 import 'package:sell_pro/src/shared/widgets/start_app_bar.dart';
 
 class SplashScreenPage extends StatelessWidget {
@@ -13,7 +14,7 @@ class SplashScreenPage extends StatelessWidget {
       child: Scaffold(
         appBar: StartAppBar(
           title: "شروع",
-          elevation: 1,
+          // elevation: 1,
         ),
         body: Center(
           child: Padding(
@@ -71,7 +72,10 @@ class SplashScreenPage extends StatelessWidget {
                         side: BorderSide(
                             color:
                                 Theme.of(context).colorScheme.inversePrimary)),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Home()));
+                    },
                     child: const Text(
                       "ورود به عنوان مهمان",
                       style: AppTextStyle.xLargeBlackBold,
