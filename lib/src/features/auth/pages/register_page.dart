@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sell_pro/src/core/styles/app_text_style.dart';
 import 'package:sell_pro/src/shared/widgets/start_app_bar.dart';
 import '../../../shared/widgets/app_text_field.dart';
 import '../widgets/logo_image_picker.dart';
@@ -58,7 +59,8 @@ class RegisterPage extends StatelessWidget {
                   ElevatedButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.login),
-                      label: const Text("ایجاد حساب کاربری")),
+                      label: const Text("ایجاد حساب کاربری",
+                          style: AppTextStyle.xLargeBlackBold)),
                 ]),
               ),
             ),

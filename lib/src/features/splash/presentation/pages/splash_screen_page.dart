@@ -25,11 +25,12 @@ class SplashScreenPage extends StatelessWidget {
                 const SizedBox(
                   height: 40.0,
                 ),
-                const Text(
+                Text(
                   "برای شروع لطفا یکی از گزینه های زیر را انتخاب کنید",
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Theme.of(context).colorScheme.secondary,
                       fontSize: 16,
+                      fontFamily: "Sahel",
                       fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
@@ -71,10 +72,9 @@ class SplashScreenPage extends StatelessWidget {
                             color:
                                 Theme.of(context).colorScheme.inversePrimary)),
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "ورود به عنوان مهمان",
-                      style: TextStyle(
-                          color: Theme.of(context).colorScheme.secondary),
+                      style: AppTextStyle.xLargeBlackBold,
                     ))
               ],
             ),
