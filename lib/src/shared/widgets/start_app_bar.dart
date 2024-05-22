@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sell_pro/src/configs/theme/theme_manager.dart';
 
 // ignore: must_be_immutable
 class StartAppBar extends StatefulWidget implements PreferredSizeWidget {

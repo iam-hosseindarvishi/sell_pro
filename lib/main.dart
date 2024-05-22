@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:sell_pro/src/configs/theme/theme_manager.dart';
 import 'src/features/splash/presentation/pages/splash_screen_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
-ThemeManager _themeManager = ThemeManager();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
