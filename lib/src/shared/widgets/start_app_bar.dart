@@ -27,17 +27,17 @@ class _StartAppBarState extends State<StartAppBar> {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.primary,
       title: Text(
         widget.title,
         style: TextStyle(
             fontFamily: "Sahel",
             fontWeight: widget.fontWeight,
-            color: Theme.of(context).colorScheme.primary,
+            color: Theme.of(context).colorScheme.onPrimary,
             fontSize: widget.fontSize!),
       ),
       elevation: widget.elevation,
-      iconTheme: IconThemeData(color: Theme.of(context).colorScheme.primary),
+      iconTheme: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
     );
   }
 }

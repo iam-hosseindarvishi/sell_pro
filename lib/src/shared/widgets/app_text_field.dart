@@ -41,16 +41,16 @@ class AppTextField extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: "Sahel",
                 fontSize: 15.0,
-                color: Theme.of(context).colorScheme.inversePrimary),
+                color: Theme.of(context).colorScheme.onPrimary),
             filled: true,
-            fillColor: Theme.of(context).colorScheme.secondary,
+            fillColor: Theme.of(context).colorScheme.primary,
             border: OutlineInputBorder(
                 borderSide: BorderSide.none,
                 borderRadius: BorderRadius.circular(20.0)),
             contentPadding: EdgeInsets.all(16.0),
           ),
-          style: const TextStyle(
-              color: Colors.white,
+          style: TextStyle(
+              color: Theme.of(context).colorScheme.onPrimary,
               fontFamily: "Sahel",
               fontWeight: FontWeight.bold,
               letterSpacing: 1.0,
