@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sell_pro/src/core/styles/app_text_style.dart';
-import 'package:sell_pro/src/shared/widgets/start_app_bar.dart';
+import 'package:sell_pro/src/shared/guest/widgets/guest_app_bar.dart';
 import '../../../../shared/widgets/app_text_field.dart';
 import '../widgets/logo_image_picker.dart';
 

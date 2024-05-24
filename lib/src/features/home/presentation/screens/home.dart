@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sell_pro/src/configs/theme/theme_mode_provider.dart';
+import 'package:sell_pro/src/shared/auth/widgets/auth_app_bar.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -14,26 +17,24 @@ class _HomeState extends State<Home> {
       textDirection: TextDirection.rtl,
       child: SafeArea(
         child: Scaffold(
-          drawer: Drawer(),
-          appBar: AppBar(
-            title: Text(
-              "کاربر مهمان",
-              style: TextStyle(fontFamily: "Sahel"),
-            ),
+          drawer: const Drawer(),
+          appBar: const AuthAppBar(),
+          body: Container(),
+          bottomNavigationBar: BottomNavigationBar(
             backgroundColor: Theme.of(context).colorScheme.primary,
-            foregroundColor: Theme.of(context).colorScheme.onPrimary,
-            leading: Builder(
-              builder: (context) {
-                return IconButton(
-                    onPressed: () => Scaffold.of(context).openDrawer(),
-                    icon: const Icon(Icons.menu));
-              },
-            ),
-            actions: [
-              IconButton(onPressed: () {}, icon: Icon(Icons.email)),
+            selectedItemColor: Theme.of(context).colorScheme.inversePrimary,
+            unselectedItemColor: Theme.of(context).colorScheme.onPrimary,
+            items: const [
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.dashboard), label: "داشبورد"),
+              BottomNavigationBarItem(icon: Icon(Icons.people), label: "اشخاص"),
+              BottomNavigationBarItem(icon: Icon(Icons.store), label: "کالاها"),
+              // BottomNavigationBarItem(
+              //     icon: Icon(Icons.attach_money_sharp), label: "امور مالی"),
+              // BottomNavigationBarItem(
+              //     icon: Icon(Icons.report), label: "گزارش ها")
             ],
           ),
-          body: Container(),
         ),
       ),
     );

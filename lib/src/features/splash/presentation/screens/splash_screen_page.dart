@@ -3,7 +3,7 @@ import 'package:sell_pro/src/core/styles/app_text_style.dart';
 import 'package:sell_pro/src/features/auth/presentation/screens/login_page.dart';
 import 'package:sell_pro/src/features/auth/presentation/screens/register_page.dart';
 import 'package:sell_pro/src/features/home/presentation/screens/home.dart';
-import 'package:sell_pro/src/shared/widgets/start_app_bar.dart';
+import 'package:sell_pro/src/shared/guest/widgets/guest_app_bar.dart';
 
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({super.key});

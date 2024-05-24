@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sell_pro/src/configs/theme/theme_mode_provider.dart';
 
 // ignore: must_be_immutable
 class StartAppBar extends StatefulWidget implements PreferredSizeWidget {
@@ -26,6 +28,23 @@ class _StartAppBarState extends State<StartAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      actions: [
+        Consumer(
+          builder: (context, ref, child) {
+            final theme = ref.watch(themeModeProvider);
+            return IconButton(
+                onPressed: () {
+                  ref.read(themeModeProvider.notifier).state =
+                      theme == ThemeMode.light
+                          ? ThemeMode.dark
+                          : ThemeMode.light;
+                },
+                icon: Icon(theme == ThemeData.dark
+                    ? Icons.light_mode
+                    : Icons.dark_mode));
+          },
+        )
+      ],
       centerTitle: true,
       backgroundColor: Theme.of(context).colorScheme.primary,
       title: Text(
