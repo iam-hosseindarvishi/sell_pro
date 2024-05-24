@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sell_pro/src/configs/theme/theme_mode_provider.dart';
 import 'package:sell_pro/src/shared/auth/widgets/auth_app_bar.dart';
 
 class Home extends StatefulWidget {
