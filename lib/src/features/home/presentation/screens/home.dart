@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sell_pro/src/shared/widgets/notification_button.dart';
 import 'package:sell_pro/src/shared/widgets/open_drawer_button.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
@@ -21,7 +22,7 @@ class _HomeState extends State<Home> {
           appBar: AppAppbar(
             leading: const OpenDrawer(),
             title: const Text("کاربر مهمان"),
-            actions: [ThemeToggler()],
+            actions: const [ThemeToggler(), NotificationAppbarButton()],
           ),
           body: Container(),
           bottomNavigationBar: BottomNavigationBar(
