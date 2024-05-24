@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sell_pro/src/core/styles/app_text_style.dart';
-import 'package:sell_pro/src/shared/guest/widgets/guest_app_bar.dart';
+import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import '../../../../shared/widgets/app_text_field.dart';
+import '../../../../shared/widgets/theme_toggler_button.dart';
 import '../widgets/logo_image_picker.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -13,8 +14,14 @@ class RegisterPage extends StatelessWidget {
       child: Directionality(
           textDirection: TextDirection.rtl,
           child: Scaffold(
-            appBar: StartAppBar(
-              title: "ایجاد حساب کاربری",
+            appBar: AppAppbar(
+              title: const Text(
+                "ایجاد حساب کاربری",
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
+              ),
+              centerTitle: true,
+              actions: [ThemeToggler()],
             ),
             body: Padding(
               padding:

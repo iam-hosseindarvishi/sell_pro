@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sell_pro/src/shared/guest/widgets/guest_app_bar.dart';
+import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import '../../../../shared/widgets/app_text_field.dart';
 import 'package:sell_pro/src/core/styles/app_text_style.dart';
+
+import '../../../../shared/widgets/theme_toggler_button.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -12,8 +14,14 @@ class LoginPage extends StatelessWidget {
       child: Directionality(
         textDirection: TextDirection.rtl,
         child: Scaffold(
-          appBar: StartAppBar(
-            title: "ورود به برنامه",
+          appBar: AppAppbar(
+            title: const Text(
+              "ورود به برنامه",
+              style:
+                  TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
+            ),
+            centerTitle: true,
+            actions: [ThemeToggler()],
           ),
           body: Padding(
             padding:

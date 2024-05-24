@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sell_pro/src/shared/auth/widgets/auth_app_bar.dart';
+import 'package:sell_pro/src/shared/widgets/open_drawer_button.dart';
+import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
+import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -16,7 +18,11 @@ class _HomeState extends State<Home> {
       child: SafeArea(
         child: Scaffold(
           drawer: const Drawer(),
-          appBar: const AuthAppBar(),
+          appBar: AppAppbar(
+            leading: const OpenDrawer(),
+            title: const Text("کاربر مهمان"),
+            actions: [ThemeToggler()],
+          ),
           body: Container(),
           bottomNavigationBar: BottomNavigationBar(
             backgroundColor: Theme.of(context).colorScheme.primary,

@@ -27,7 +27,7 @@ class ImagePickerButton extends StatelessWidget {
           Icon(
             size: iconSize,
             icon,
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.onBackground,
           ),
           Text(
             text,
