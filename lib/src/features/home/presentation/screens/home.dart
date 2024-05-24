@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sell_pro/src/features/home/data/datasources/temp_nav_items.dart';
+import 'package:sell_pro/src/features/home/presentation/providers/bottom_navigation_state_provider.dart';
+import 'package:sell_pro/src/features/home/presentation/widgets/bottom_navigation_bar.dart';
 import 'package:sell_pro/src/shared/widgets/notification_button.dart';
 import 'package:sell_pro/src/shared/widgets/open_drawer_button.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
 
-class Home extends StatefulWidget {
+class Home extends ConsumerWidget {
   const Home({super.key});
-
   @override
-  State<Home> createState() => _HomeState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    final indexBottomNavbar = ref.watch(indexBottomNavbarProvider);
 
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: SafeArea(
@@ -24,22 +24,8 @@ class _HomeState extends State<Home> {
             title: const Text("کاربر مهمان"),
             actions: const [ThemeToggler(), NotificationAppbarButton()],
           ),
-          body: Container(),
-          bottomNavigationBar: BottomNavigationBar(
-            backgroundColor: Theme.of(context).colorScheme.primary,
-            selectedItemColor: Theme.of(context).colorScheme.inversePrimary,
-            unselectedItemColor: Theme.of(context).colorScheme.onPrimary,
-            items: const [
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.dashboard), label: "داشبورد"),
-              BottomNavigationBarItem(icon: Icon(Icons.people), label: "اشخاص"),
-              BottomNavigationBarItem(icon: Icon(Icons.store), label: "کالاها"),
-              // BottomNavigationBarItem(
-              //     icon: Icon(Icons.attach_money_sharp), label: "امور مالی"),
-              // BottomNavigationBarItem(
-              //     icon: Icon(Icons.report), label: "گزارش ها")
-            ],
-          ),
+          body: bodies[indexBottomNavbar],
+          bottomNavigationBar: const HomeBottomNavitaionBar(),
         ),
       ),
     );
