@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
                   TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
             ),
             centerTitle: true,
-            actions: [ThemeToggler()],
+            actions: const [ThemeToggler()],
           ),
           body: Padding(
             padding:
@@ -54,7 +54,12 @@ class LoginPage extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(Icons.phone_android),
                       label: Text("ورود با شماره تلفن",
-                          style: Theme.of(context).textTheme.headlineMedium)),
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium
+                              ?.copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.primary))),
                   const SizedBox(
                     height: 20.0,
                   ),
@@ -62,7 +67,12 @@ class LoginPage extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(Icons.person),
                       label: Text("ثبت نام نکرده اید ؟ ثبت نام کنید",
-                          style: Theme.of(context).textTheme.headlineMedium))
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelLarge
+                              ?.copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.primary)))
                 ],
               ),
             ),

@@ -21,7 +21,7 @@ class SplashScreenPage extends StatelessWidget {
                   TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
             ),
             centerTitle: true,
-            actions: [ThemeToggler()],
+            actions: const [ThemeToggler()],
           ),
           body: Center(
             child: Padding(
@@ -36,7 +36,7 @@ class SplashScreenPage extends StatelessWidget {
                   Text(
                     "برای شروع لطفا یکی از گزینه های زیر را انتخاب کنید",
                     style: TextStyle(
-                        color: Theme.of(context).colorScheme.secondary,
+                        color: Theme.of(context).colorScheme.onBackground,
                         fontSize: 16,
                         fontFamily: "Sahel",
                         fontWeight: FontWeight.bold),
@@ -54,7 +54,7 @@ class SplashScreenPage extends StatelessWidget {
                       },
                       child: Text(
                         "ورود به حساب کاربری",
-                        style: Theme.of(context).textTheme.headlineMedium,
+                        style: Theme.of(context).textTheme.labelMedium,
                       )),
                   const SizedBox(
                     height: 10.00,
@@ -67,27 +67,25 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const RegisterPage(),
                             ));
                       },
-                      child: Text(
-                        "ایجاد حساب کاربری جدید",
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      )),
+                      child: Text("ایجاد حساب کاربری جدید",
+                          style: Theme.of(context).textTheme.labelMedium)),
                   const SizedBox(
                     height: 10.00,
                   ),
                   OutlinedButton(
-                      style: OutlinedButton.styleFrom(
-                          side: BorderSide(
-                              color: Theme.of(context)
-                                  .colorScheme
-                                  .inversePrimary)),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Home()));
                       },
-                      child: Text(
-                        "ورود به عنوان مهمان",
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      ))
+                      child: Text("ورود به عنوان مهمان",
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium
+                              ?.copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.primary)))
                 ],
               ),
             ),

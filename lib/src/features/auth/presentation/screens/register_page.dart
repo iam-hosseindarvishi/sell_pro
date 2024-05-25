@@ -20,7 +20,7 @@ class RegisterPage extends StatelessWidget {
                     TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
               ),
               centerTitle: true,
-              actions: [ThemeToggler()],
+              actions: const [ThemeToggler()],
             ),
             body: Padding(
               padding:
@@ -64,7 +64,10 @@ class RegisterPage extends StatelessWidget {
                   // buttons
                   ElevatedButton.icon(
                       onPressed: () {},
-                      icon: const Icon(Icons.login),
+                      icon: Icon(
+                        Icons.login,
+                        color: Theme.of(context).colorScheme.onPrimary,
+                      ),
                       label: Text("ایجاد حساب کاربری",
                           style: Theme.of(context).textTheme.headlineMedium)),
                 ]),

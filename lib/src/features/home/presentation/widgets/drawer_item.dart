@@ -4,7 +4,7 @@ class DrawerItem extends StatelessWidget {
   final String title;
   final IconData icon;
   final handleTab;
-  DrawerItem(
+  const DrawerItem(
       {super.key,
       required this.title,
       required this.icon,
@@ -28,7 +28,7 @@ class DrawerItem extends StatelessWidget {
             Text(
               title,
               style:
-                  TextStyle(fontFamily: "Sahel", fontWeight: FontWeight.bold),
+                  const TextStyle(fontFamily: "Sahel", fontWeight: FontWeight.bold),
             )
           ],
         ),

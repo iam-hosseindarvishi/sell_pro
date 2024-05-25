@@ -14,7 +14,7 @@ class ImagePickerButton extends StatelessWidget {
       required this.icon,
       required this.handleTab,
       this.fontSize = 18.0,
-      this.fontWeight = FontWeight.normal,
+      this.fontWeight = FontWeight.bold,
       this.iconSize = 50.0});
 
   @override
@@ -31,7 +31,11 @@ class ImagePickerButton extends StatelessWidget {
           ),
           Text(
             text,
-            style: TextStyle(fontSize: fontSize, fontWeight: fontWeight),
+            style: TextStyle(
+                fontFamily: "Sahel",
+                color: Theme.of(context).colorScheme.onBackground,
+                fontSize: fontSize,
+                fontWeight: fontWeight),
           )
         ],
       ),

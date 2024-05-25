@@ -10,7 +10,7 @@ class HomeBottomNavitaionBar extends ConsumerWidget {
     final indexBottomNavbar = ref.watch(indexBottomNavbarProvider);
     return BottomNavigationBar(
       backgroundColor: Theme.of(context).colorScheme.primary,
-      selectedItemColor: Theme.of(context).colorScheme.inversePrimary,
+      selectedItemColor: Theme.of(context).colorScheme.secondary,
       unselectedItemColor: Theme.of(context).colorScheme.onPrimary,
       selectedLabelStyle: const TextStyle(fontFamily: "Sahel"),
       unselectedLabelStyle: const TextStyle(fontFamily: "Sahel"),

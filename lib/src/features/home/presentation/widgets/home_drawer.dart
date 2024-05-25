@@ -28,7 +28,7 @@ class HomeDrawer extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Theme.of(context).colorScheme.onPrimary),
                   ),
-                  ThemeToggler()
+                  const ThemeToggler()
                 ],
               ),
             ],

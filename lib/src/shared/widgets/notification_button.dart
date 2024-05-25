@@ -5,6 +5,6 @@ class NotificationAppbarButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(onPressed: () {}, icon: Icon(Icons.email));
+    return IconButton(onPressed: () {}, icon: const Icon(Icons.email));
   }
 }

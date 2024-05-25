@@ -1,7 +1,6 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 class AppTextField extends StatelessWidget {
   final String hintText;
@@ -44,7 +43,7 @@ class AppTextField extends StatelessWidget {
             border: OutlineInputBorder(
                 borderSide: BorderSide.none,
                 borderRadius: BorderRadius.circular(20.0)),
-            contentPadding: EdgeInsets.all(16.0),
+            contentPadding: const EdgeInsets.all(16.0),
           ),
           style: TextStyle(
               color: Theme.of(context).colorScheme.onPrimary,

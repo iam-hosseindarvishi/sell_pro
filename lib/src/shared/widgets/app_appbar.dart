@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
 
 class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget? title;
