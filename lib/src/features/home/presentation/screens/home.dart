@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sell_pro/src/features/home/data/datasources/temp_nav_items.dart';
+import 'package:sell_pro/src/features/home/data/datasources/bottom_nav_pages.dart';
 import 'package:sell_pro/src/features/home/presentation/providers/bottom_navigation_state_provider.dart';
 import 'package:sell_pro/src/features/home/presentation/widgets/bottom_navigation_bar.dart';
 import 'package:sell_pro/src/features/home/presentation/widgets/home_drawer.dart';
@@ -21,11 +21,12 @@ class Home extends ConsumerWidget {
         child: Scaffold(
           drawer: const HomeDrawer(),
           appBar: AppAppbar(
+            context: context,
             leading: const OpenDrawer(),
             title: const Text("کاربر مهمان"),
             actions: const [ThemeToggler(), NotificationAppbarButton()],
           ),
-          body: bodies[indexBottomNavbar],
+          body: pages[indexBottomNavbar],
           bottomNavigationBar: const HomeBottomNavitaionBar(),
         ),
       ),

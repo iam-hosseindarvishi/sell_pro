@@ -5,8 +5,10 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget? leading;
   List<Widget>? actions;
   bool centerTitle;
+  final BuildContext context;
   AppAppbar(
       {super.key,
+      required this.context,
       this.title,
       this.leading,
       this.actions,
@@ -25,5 +27,6 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => const Size.fromHeight(65.0);
+  Size get preferredSize =>
+      Size.fromHeight(MediaQuery.sizeOf(context).height * 0.06);
 }

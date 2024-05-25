@@ -15,6 +15,7 @@ class SplashScreenPage extends StatelessWidget {
         textDirection: TextDirection.rtl,
         child: Scaffold(
           appBar: AppAppbar(
+            context: context,
             title: const Text(
               "شروع",
               style:
