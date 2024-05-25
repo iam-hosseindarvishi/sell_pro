@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sell_pro/src/core/styles/app_text_style.dart';
 import 'package:sell_pro/src/features/auth/presentation/screens/login_page.dart';
 import 'package:sell_pro/src/features/auth/presentation/screens/register_page.dart';
 import 'package:sell_pro/src/features/home/presentation/screens/home.dart';
@@ -53,9 +52,9 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const LoginPage(),
                             ));
                       },
-                      child: const Text(
+                      child: Text(
                         "ورود به حساب کاربری",
-                        style: AppTextStyle.xLargeBlackBold,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       )),
                   const SizedBox(
                     height: 10.00,
@@ -68,9 +67,9 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const RegisterPage(),
                             ));
                       },
-                      child: const Text(
+                      child: Text(
                         "ایجاد حساب کاربری جدید",
-                        style: AppTextStyle.xLargeBlackBold,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       )),
                   const SizedBox(
                     height: 10.00,
@@ -85,9 +84,9 @@ class SplashScreenPage extends StatelessWidget {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Home()));
                       },
-                      child: const Text(
+                      child: Text(
                         "ورود به عنوان مهمان",
-                        style: AppTextStyle.xLargeBlackBold,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ))
                 ],
               ),

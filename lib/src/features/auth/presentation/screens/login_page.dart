@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import '../../../../shared/widgets/app_text_field.dart';
-import 'package:sell_pro/src/core/styles/app_text_style.dart';
-
 import '../../../../shared/widgets/theme_toggler_button.dart';
 
 class LoginPage extends StatelessWidget {
@@ -48,23 +46,23 @@ class LoginPage extends StatelessWidget {
                   ElevatedButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.login),
-                      label: const Text("ورود به حساب کاربری",
-                          style: AppTextStyle.xLargeBlackBold)),
+                      label: Text("ورود به حساب کاربری",
+                          style: Theme.of(context).textTheme.headlineMedium)),
                   const SizedBox(height: 10.0),
                   // buttons
                   OutlinedButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.phone_android),
-                      label: const Text("ورود با شماره تلفن",
-                          style: AppTextStyle.xLargeBlackBold)),
+                      label: Text("ورود با شماره تلفن",
+                          style: Theme.of(context).textTheme.headlineMedium)),
                   const SizedBox(
                     height: 20.0,
                   ),
                   TextButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.person),
-                      label: const Text("ثبت نام نکرده اید ؟ ثبت نام کنید",
-                          style: AppTextStyle.xLargeBlackBold))
+                      label: Text("ثبت نام نکرده اید ؟ ثبت نام کنید",
+                          style: Theme.of(context).textTheme.headlineMedium))
                 ],
               ),
             ),

@@ -2,9 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:sell_pro/src/core/styles/app_font_size.dart';
-
-import '../../core/styles/app_text_field_style.dart';
 
 class AppTextField extends StatelessWidget {
   final String hintText;
@@ -55,7 +52,7 @@ class AppTextField extends StatelessWidget {
               fontWeight: FontWeight.bold,
               letterSpacing: 1.0,
               wordSpacing: 2.0,
-              fontSize: AppFontSize.medium),
+              fontSize: 16),
         ));
   }
 }
