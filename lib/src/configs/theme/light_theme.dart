@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-final primary = HexColor("#424a3a");
+final primary = HexColor("#8d8d8d");
 final inversPrimary = HexColor("#010407");
 final background = HexColor("#f6f6f6");
 final onBackground = HexColor("#424a3a");
-final onPrimary = HexColor("#d6ecd7");
+final onPrimary = HexColor("#1d1d1d");
 final surface = HexColor("#272e44");
 final onSurface = HexColor("#c9f9ff");
 final inverseSurface = HexColor("#c9f9ff");
