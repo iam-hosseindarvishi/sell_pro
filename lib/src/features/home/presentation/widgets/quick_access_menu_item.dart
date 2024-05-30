@@ -21,6 +21,12 @@ class QuickAccessMenuItem extends StatelessWidget {
         margin: const EdgeInsets.only(right: 5, left: 5),
         padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 4),
         decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+                blurStyle: BlurStyle.solid,
+                color: Theme.of(context).colorScheme.onPrimary.withOpacity(.3),
+                blurRadius: 1)
+          ],
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(5),
           border: Border(right: BorderSide(color: borderColor, width: 5)),
