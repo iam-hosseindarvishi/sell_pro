@@ -5,6 +5,8 @@ import 'package:sell_pro/src/features/home/presentation/screens/home.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
 
+import '../../../../shared/widgets/primary_elevated_button.dart';
+
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({super.key});
 
@@ -22,7 +24,9 @@ class SplashScreenPage extends StatelessWidget {
                   TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
             ),
             centerTitle: true,
-            actions: const [ThemeToggler()],
+            actions: [
+              ThemeToggler(iconColor: Theme.of(context).colorScheme.onSurface)
+            ],
           ),
           body: Center(
             child: Padding(
@@ -53,10 +57,8 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const LoginPage(),
                             ));
                       },
-                      child: Text(
-                        "ورود به حساب کاربری",
-                        style: Theme.of(context).textTheme.labelMedium,
-                      )),
+                      child: Text("ورود به حساب کاربری",
+                          style: Theme.of(context).textTheme.labelMedium)),
                   const SizedBox(
                     height: 10.00,
                   ),
@@ -85,8 +87,9 @@ class SplashScreenPage extends StatelessWidget {
                               .textTheme
                               .labelMedium
                               ?.copyWith(
-                                  color:
-                                      Theme.of(context).colorScheme.primary)))
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onBackground)))
                 ],
               ),
             ),

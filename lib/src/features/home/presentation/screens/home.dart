@@ -24,7 +24,10 @@ class Home extends ConsumerWidget {
             context: context,
             leading: const OpenDrawer(),
             title: const Text("کاربر مهمان"),
-            actions: const [ThemeToggler(), NotificationAppbarButton()],
+            actions: [
+              ThemeToggler(iconColor: Theme.of(context).colorScheme.onSurface),
+              NotificationAppbarButton()
+            ],
           ),
           body: pages[indexBottomNavbar],
           bottomNavigationBar: const HomeBottomNavitaionBar(),

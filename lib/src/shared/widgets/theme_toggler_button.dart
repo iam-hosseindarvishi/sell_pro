@@ -3,7 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sell_pro/src/configs/theme/theme_mode_provider.dart';
 
 class ThemeToggler extends StatelessWidget {
-  const ThemeToggler({super.key});
+  final Color iconColor;
+  const ThemeToggler({super.key, required this.iconColor});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class ThemeToggler extends StatelessWidget {
           },
           icon: Icon(
             theme == ThemeMode.dark ? Icons.light_mode : Icons.dark_mode,
-            color: Theme.of(context).colorScheme.onPrimary,
+            color: iconColor,
           ));
     });
   }

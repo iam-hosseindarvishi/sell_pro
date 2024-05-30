@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sell_pro/src/configs/theme/dark_theme.dart';
 import 'package:sell_pro/src/configs/theme/light_theme.dart';
 import 'package:sell_pro/src/configs/theme/theme_mode_provider.dart';
-
 import 'src/features/splash/presentation/screens/splash_screen_page.dart';
 
 void main() {
@@ -22,7 +21,7 @@ class MyApp extends ConsumerWidget {
       title: 'Sell Pro',
       themeMode: themeMode,
       darkTheme: darkTheme,
-      theme: lightTheme,
+      theme: lightTheme.copyWith(),
       home: const SplashScreenPage(),
     );
   }

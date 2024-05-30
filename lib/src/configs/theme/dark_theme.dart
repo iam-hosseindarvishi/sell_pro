@@ -1,27 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:sell_pro/src/configs/theme/light_theme.dart';
 
-final primary = HexColor("#336633");
-final background = HexColor("#003333");
-final onPrimary = HexColor("#07301a");
-final secondary = HexColor("#339966");
+final primary = HexColor("#3C404B");
+final onPrimary = HexColor("#c9f9ff");
+final inversePrimary = HexColor("#");
+final background = HexColor("#1f1f1b");
+final onBackground = HexColor("#f6f6f6");
+final surface = HexColor("#272e44");
+final onSurface = HexColor("#c9f9ff");
+final secondary = HexColor("#424a3a");
+final onSecondary = HexColor("#be5136");
+final onInverseSurface = HexColor("#424a3a");
 final inversPrimary = HexColor("#66cc99");
 ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     colorScheme: ColorScheme.dark(
       background: background,
+      onBackground: onBackground,
       primary: primary,
-      primaryContainer: background,
-      surface: Colors.white,
-      inverseSurface: Colors.black,
-      onSurface: Colors.black,
-      onBackground: primary,
+      inversePrimary: inversPrimary,
       onPrimary: onPrimary,
+      primaryContainer: background,
+      surface: surface,
+      inverseSurface: inverseSurface,
+      onSurface: onSurface,
       secondary: secondary,
-      secondaryContainer: onPrimary,
-      onSecondary: primary,
-      onSecondaryContainer: primary,
-      inversePrimary: background,
+      onSecondary: onSecondary,
+      onInverseSurface: onInverseSurface,
     ),
     textTheme: textTheme,
     //text theme
@@ -29,20 +35,19 @@ ThemeData darkTheme = ThemeData(
     //outlined button theme
     outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-      side: BorderSide(color: primary),
+      foregroundColor: onBackground,
+      side: BorderSide(color: onBackground),
     )),
     //elevatedButton theme
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        overlayColor: MaterialStatePropertyAll<Color>(primary),
-        backgroundColor: MaterialStatePropertyAll<Color>(primary),
-        padding: const MaterialStatePropertyAll<EdgeInsets>(
-            EdgeInsets.symmetric(horizontal: 12, vertical: 8)),
-      ),
+          overlayColor: MaterialStatePropertyAll<Color>(secondary),
+          foregroundColor: MaterialStatePropertyAll<Color>(onPrimary),
+          backgroundColor: MaterialStatePropertyAll<Color>(primary)),
     ));
 
 // text theme
-final fontFamily = "Sahel";
+const fontFamily = "Sahel";
 
 TextTheme textTheme = TextTheme(
     // body text style

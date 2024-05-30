@@ -9,7 +9,7 @@ class HomeDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Theme.of(context).colorScheme.primary,
+      backgroundColor: Theme.of(context).colorScheme.background,
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -26,9 +26,11 @@ class HomeDrawer extends StatelessWidget {
                         fontFamily: "Sahel",
                         fontSize: 21,
                         fontWeight: FontWeight.bold,
-                        color: Theme.of(context).colorScheme.onPrimary),
+                        color: Theme.of(context).colorScheme.onBackground),
                   ),
-                  const ThemeToggler()
+                  ThemeToggler(
+                    iconColor: Theme.of(context).colorScheme.onBackground,
+                  )
                 ],
               ),
             ],

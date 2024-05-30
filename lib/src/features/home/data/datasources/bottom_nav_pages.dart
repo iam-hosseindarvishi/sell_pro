@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sell_pro/src/features/home/presentation/screens/home_page.dart';
 
-final bodies = [
-  const Center(
-    child: Text('شما در داشبورد هستید'),
-  ),
+final pages = [
+  const HomePage(),
   const Center(
     child: Text('شما در اشخاص هستید'),
   ),

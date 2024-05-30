@@ -19,9 +19,10 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
         title: title,
         centerTitle: centerTitle,
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        foregroundColor: Theme.of(context).colorScheme.onPrimary,
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        foregroundColor: Theme.of(context).colorScheme.onSurface,
         leading: leading,
+        elevation: 50,
         actions: actions);
   }
 
