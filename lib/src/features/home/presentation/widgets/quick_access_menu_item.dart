@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class QuickAccessMenuItem extends StatelessWidget {
-  final IconData icon;
+  final String icon;
   final String title;
   final String subTitle;
   String? subText;
@@ -32,10 +32,10 @@ class QuickAccessMenuItem extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: [
-              Image.asset(
-                "assets/Launching-cuate.png",
-                width: 64,
-                height: 64,
+              Image(
+                image: AssetImage(icon),
+                height: 36,
+                width: 36,
               ),
               const SizedBox(
                 width: 10,

@@ -49,14 +49,14 @@ class _HomePageState extends ConsumerState<HomePage> {
                 children: [
                   QuickAccessMenuItem(
                     borderColor: Colors.blue,
-                    icon: Icons.store,
+                    icon: "assets/icons/sell.png",
                     subTitle: "فروش داشتید؟",
                     subText: "از این بخش ثبت کنید",
                     title: "فروش",
                   ),
                   QuickAccessMenuItem(
                     borderColor: Colors.red,
-                    icon: Icons.shopping_cart,
+                    icon: "assets/icons/buying.png",
                     subTitle: "خرید داشتید؟",
                     title: "خرید",
                     subText: "از این بخش ثبت کنید",
