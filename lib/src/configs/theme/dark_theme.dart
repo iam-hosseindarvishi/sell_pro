@@ -38,6 +38,13 @@ ThemeData darkTheme = ThemeData(
       foregroundColor: onBackground,
       side: BorderSide(color: onBackground),
     )),
+    //filled button
+    filledButtonTheme: FilledButtonThemeData(
+      style: ButtonStyle(
+          overlayColor: MaterialStatePropertyAll<Color>(secondary),
+          foregroundColor: MaterialStatePropertyAll<Color>(onPrimary),
+          backgroundColor: MaterialStatePropertyAll<Color>(primary)),
+    ),
     //elevatedButton theme
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(

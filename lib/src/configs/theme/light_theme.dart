@@ -5,7 +5,7 @@ final primary = HexColor("#424a3a");
 final inversPrimary = HexColor("#010407");
 final background = HexColor("#f6f6f6");
 final onBackground = HexColor("#424a3a");
-final onPrimary = HexColor("#010407");
+final onPrimary = HexColor("#d6ecd7");
 final surface = HexColor("#272e44");
 final onSurface = HexColor("#c9f9ff");
 final inverseSurface = HexColor("#c9f9ff");
@@ -28,8 +28,13 @@ ThemeData lightTheme = ThemeData(
         onSecondary: onSecondary,
         onInverseSurface: onInverseSurface),
     textTheme: textTheme,
-    //text theme
-
+    //filled button theme
+    filledButtonTheme: FilledButtonThemeData(
+      style: ButtonStyle(
+          overlayColor: MaterialStatePropertyAll<Color>(secondary),
+          foregroundColor: MaterialStatePropertyAll<Color>(onPrimary),
+          backgroundColor: MaterialStatePropertyAll<Color>(primary)),
+    ),
     //outlined button theme
     outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
