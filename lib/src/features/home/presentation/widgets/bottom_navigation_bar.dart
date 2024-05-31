@@ -12,8 +12,10 @@ class HomeBottomNavitaionBar extends ConsumerWidget {
       backgroundColor: Theme.of(context).colorScheme.surface,
       selectedItemColor: Theme.of(context).colorScheme.onSecondary,
       unselectedItemColor: Theme.of(context).colorScheme.onSurface,
-      selectedLabelStyle: const TextStyle(fontFamily: "Sahel"),
-      unselectedLabelStyle: const TextStyle(fontFamily: "Sahel"),
+      selectedLabelStyle:
+          const TextStyle(fontFamily: "IranSans", fontWeight: FontWeight.bold),
+      unselectedLabelStyle: const TextStyle(
+          fontFamily: "IranSans", fontWeight: FontWeight.normal),
       currentIndex: indexBottomNavbar,
       type: BottomNavigationBarType.fixed,
       items: const [

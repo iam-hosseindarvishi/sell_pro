@@ -5,7 +5,6 @@ import 'package:sell_pro/src/features/home/presentation/screens/home.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
 
-
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({super.key});
 
@@ -19,8 +18,8 @@ class SplashScreenPage extends StatelessWidget {
             context: context,
             title: const Text(
               "شروع",
-              style:
-                  TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold, fontFamily: "IranSans"),
             ),
             centerTitle: true,
             actions: [
@@ -42,7 +41,7 @@ class SplashScreenPage extends StatelessWidget {
                     style: TextStyle(
                         color: Theme.of(context).colorScheme.onBackground,
                         fontSize: 16,
-                        fontFamily: "Sahel",
+                        fontFamily: "IranSans",
                         fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
@@ -58,6 +57,10 @@ class SplashScreenPage extends StatelessWidget {
                       },
                       child: const Text(
                         "ورود به حساب کاربری",
+                        style: TextStyle(
+                            fontFamily: "IranSans",
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
                       )),
                   const SizedBox(
                     height: 10.00,
@@ -70,7 +73,13 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const RegisterPage(),
                             ));
                       },
-                      child: const Text("ایجاد حساب کاربری جدید")),
+                      child: const Text(
+                        "ایجاد حساب کاربری جدید",
+                        style: TextStyle(
+                            fontFamily: "IranSans",
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
+                      )),
                   const SizedBox(
                     height: 10.00,
                   ),
@@ -83,6 +92,10 @@ class SplashScreenPage extends StatelessWidget {
                       },
                       child: const Text(
                         "ورود به عنوان مهمان",
+                        style: TextStyle(
+                            fontFamily: "IranSans",
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
                       ))
                 ],
               ),

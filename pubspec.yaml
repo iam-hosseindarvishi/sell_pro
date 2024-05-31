@@ -89,11 +89,14 @@ flutter:
         - asset: assets/fonts/Sahel-Regular.ttf
         - asset: assets/fonts/Sahel-Bold.ttf
         - asset: assets/fonts/Sahel-Black.ttf
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+    - family: IranSans
+      fonts:
+        - asset: assets/fonts/IranSans/IRANSans.ttf
+        - asset: assets/fonts/IranSans/IRANSans-Black.ttf
+        - asset: assets/fonts/IranSans/IRANSans-Bold.ttf
+        - asset: assets/fonts/IranSans/IRANSans-Light.ttf
+        - asset: assets/fonts/IranSans/IRANSans-Medium.ttf
+        - asset: assets/fonts/IranSans/IRANSans-UltraLight.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

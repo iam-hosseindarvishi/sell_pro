@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sell_pro/src/features/home/presentation/widgets/home_quick_access_button.dart';
 import 'package:sell_pro/src/features/home/presentation/widgets/quick_access_items.dart';
 import '../widgets/home_list_access_items.dart';
 
@@ -36,15 +35,16 @@ class _HomePageState extends ConsumerState<HomePage> {
                   label: Text(
                     "خلاصه امروز",
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onPrimary),
+                        color: Theme.of(context).colorScheme.onPrimary,
+                        fontFamily: "IranSans"),
                   )),
               const SizedBox(
                 height: 20,
               ),
               Text("منو دسترسی سریع",
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
-                      )),
+                      color: Theme.of(context).colorScheme.onBackground,
+                      fontFamily: "IranSans")),
               const SizedBox(
                 height: 15,
               ),
@@ -55,8 +55,8 @@ class _HomePageState extends ConsumerState<HomePage> {
               ),
               Text("لیست ها",
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
-                      )),
+                      color: Theme.of(context).colorScheme.onBackground,
+                      fontFamily: "IranSans")),
               const SizedBox(
                 height: 15,
               ),

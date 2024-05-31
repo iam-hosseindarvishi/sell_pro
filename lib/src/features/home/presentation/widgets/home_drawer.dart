@@ -23,7 +23,7 @@ class HomeDrawer extends StatelessWidget {
                   Text(
                     "مدیریت فروشگاه و انبار",
                     style: TextStyle(
-                        fontFamily: "Sahel",
+                        fontFamily: "IranSans",
                         fontSize: 21,
                         fontWeight: FontWeight.bold,
                         color: Theme.of(context).colorScheme.onBackground),

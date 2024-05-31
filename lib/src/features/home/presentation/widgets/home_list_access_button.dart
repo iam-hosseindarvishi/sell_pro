@@ -44,6 +44,7 @@ class HomeListAccessButton extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
+                  fontFamily: "IranSans",
                   color: Theme.of(context).colorScheme.onBackground),
             ),
             Text(
@@ -51,6 +52,7 @@ class HomeListAccessButton extends StatelessWidget {
               style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.normal,
+                  fontFamily: "IranSans",
                   color: Theme.of(context)
                       .colorScheme
                       .onBackground

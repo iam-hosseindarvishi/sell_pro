@@ -17,8 +17,8 @@ class RegisterPage extends StatelessWidget {
               context: context,
               title: const Text(
                 "ایجاد حساب کاربری",
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
+                style: TextStyle(
+                    fontWeight: FontWeight.normal, fontFamily: "IranSams"),
               ),
               centerTitle: true,
               actions: [
@@ -71,8 +71,13 @@ class RegisterPage extends StatelessWidget {
                         Icons.login,
                         color: Theme.of(context).colorScheme.onPrimary,
                       ),
-                      label: Text("ایجاد حساب کاربری",
-                          style: Theme.of(context).textTheme.headlineMedium)),
+                      label: const Text(
+                        "ایجاد حساب کاربری",
+                        style: TextStyle(
+                            fontFamily: "IranSans",
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
+                      )),
                 ]),
               ),
             ),

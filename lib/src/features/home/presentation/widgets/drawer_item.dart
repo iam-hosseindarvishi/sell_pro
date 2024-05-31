@@ -28,7 +28,7 @@ class DrawerItem extends StatelessWidget {
             Text(
               title,
               style: const TextStyle(
-                  fontFamily: "Sahel", fontWeight: FontWeight.bold),
+                  fontFamily: "IranSans", fontWeight: FontWeight.bold),
             )
           ],
         ),

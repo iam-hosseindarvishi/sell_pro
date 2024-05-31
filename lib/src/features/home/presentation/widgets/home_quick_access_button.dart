@@ -57,7 +57,7 @@ class HomeQuickAccessButton extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                        fontFamily: "Sahel",
+                        fontFamily: "IranSans",
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                         color: Theme.of(context).colorScheme.onPrimary),
@@ -67,8 +67,8 @@ class HomeQuickAccessButton extends StatelessWidget {
                     maxLines: 1,
                     softWrap: true,
                     style: TextStyle(
-                        fontFamily: "Sahel",
-                        fontWeight: FontWeight.w700,
+                        fontFamily: "IranSans",
+                        fontWeight: FontWeight.w400,
                         fontSize: 14,
                         color: Theme.of(context)
                             .colorScheme
@@ -80,8 +80,8 @@ class HomeQuickAccessButton extends StatelessWidget {
                     maxLines: 1,
                     softWrap: true,
                     style: TextStyle(
-                        fontFamily: "Sahel",
-                        fontWeight: FontWeight.w500,
+                        fontFamily: "IranSans",
+                        fontWeight: FontWeight.w300,
                         fontSize: 14,
                         color: Theme.of(context)
                             .colorScheme

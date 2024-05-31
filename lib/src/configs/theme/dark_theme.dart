@@ -64,7 +64,7 @@ ThemeData darkTheme = ThemeData(
     ));
 
 // text theme
-const fontFamily = "Sahel";
+const fontFamily = "IranSans";
 
 TextTheme textTheme = const TextTheme(
     // body text style

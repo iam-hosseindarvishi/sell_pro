@@ -16,8 +16,8 @@ class LoginPage extends StatelessWidget {
             context: context,
             title: const Text(
               "ورود به برنامه",
-              style:
-                  TextStyle(fontWeight: FontWeight.bold, fontFamily: "Sahel"),
+              style: TextStyle(
+                  fontWeight: FontWeight.normal, fontFamily: "IranSans"),
             ),
             centerTitle: true,
             actions: [
@@ -51,6 +51,10 @@ class LoginPage extends StatelessWidget {
                       icon: const Icon(Icons.login),
                       label: const Text(
                         "ورود به حساب کاربری",
+                        style: TextStyle(
+                            fontFamily: "IranSans",
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
                       )),
                   const SizedBox(height: 10.0),
                   // buttons
@@ -59,6 +63,10 @@ class LoginPage extends StatelessWidget {
                       icon: const Icon(Icons.phone_android),
                       label: const Text(
                         "ورود با شماره تلفن",
+                        style: TextStyle(
+                            fontFamily: "IranSans",
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
                       )),
                   const SizedBox(
                     height: 20.0,
@@ -68,6 +76,10 @@ class LoginPage extends StatelessWidget {
                       icon: const Icon(Icons.person),
                       label: const Text(
                         "ثبت نام نکرده اید ؟ ثبت نام کنید",
+                        style: TextStyle(
+                            fontFamily: "IranSans",
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
                       ))
                 ],
               ),

@@ -23,7 +23,10 @@ class Home extends ConsumerWidget {
           appBar: AppAppbar(
             context: context,
             leading: const OpenDrawer(),
-            title: const Text("کاربر مهمان"),
+            title: const Text(
+              "کاربر مهمان",
+              style: TextStyle(fontFamily: "IranSans"),
+            ),
             actions: [
               ThemeToggler(iconColor: Theme.of(context).colorScheme.onSurface),
               const NotificationAppbarButton()
