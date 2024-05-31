@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home_list_access_button.dart';
+import 'home_quick_access_button.dart';
 
 class HomeListAccessItems extends StatelessWidget {
   const HomeListAccessItems({
@@ -64,7 +65,43 @@ class HomeListAccessItems extends StatelessWidget {
           borderColor: Colors.blueGrey,
           title: "لیست آخرین تغییرات",
           subTitle: "لیست اطلاعات ثبت شده،ویرایش شده یا حذف شده",
-        )
+        ),
+        Divider(
+          endIndent: 20,
+          indent: 20,
+          color: Theme.of(context).colorScheme.onBackground,
+        ),
+        HomeListAccessButton(
+          handleTab: () {},
+          borderColor: Colors.amber,
+          title: "خدمات",
+          subTitle: "لیست خدمات ثبت شده",
+          mt: 10,
+        ),
+        HomeListAccessButton(
+          handleTab: () {},
+          borderColor: Colors.red,
+          title: "هزینه های فاکتورها",
+          subTitle: "لیست هزینه های فاکتور (هزینه ارسال و..)",
+        ),
+        Divider(
+          endIndent: 20,
+          indent: 20,
+          color: Theme.of(context).colorScheme.onBackground,
+        ),
+        HomeListAccessButton(
+          handleTab: () {},
+          borderColor: Colors.blue,
+          title: "کاتالوگ کالا",
+          subTitle: "ساخت کاتالوگ کالا برای سفارش گیری سریع",
+          mt: 10,
+        ),
+        HomeListAccessButton(
+          handleTab: () {},
+          borderColor: Colors.blue,
+          title: "سفارشات",
+          subTitle: "لیست سفارشات ثبت شده - ثبت سفارش جدید با کاتالوگ",
+        ),
       ],
     );
   }

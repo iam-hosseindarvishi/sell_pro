@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 
 class HomeListAccessButton extends StatelessWidget {
   final Function handleTab;
-  final Color borderColor;
+  Color borderColor;
   final String title;
+  double mt;
   final String subTitle;
-  const HomeListAccessButton({
+  HomeListAccessButton({
     super.key,
     required this.handleTab,
-    required this.borderColor,
+    this.borderColor = Colors.transparent,
     required this.title,
     required this.subTitle,
+    this.mt = 0,
   });
 
   @override
@@ -19,7 +21,7 @@ class HomeListAccessButton extends StatelessWidget {
       onTap: handleTab(),
       child: Container(
         width: double.infinity,
-        margin: const EdgeInsets.only(right: 5, left: 5, bottom: 10),
+        margin: EdgeInsets.only(right: 5, left: 5, bottom: 10, top: mt),
         padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
         decoration: BoxDecoration(
           boxShadow: [

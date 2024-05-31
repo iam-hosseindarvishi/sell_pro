@@ -5,14 +5,14 @@ class HomeQuickAccessButton extends StatelessWidget {
   final String title;
   String? subTitle;
   String? subText;
-  final Color borderColor;
+  Color borderColor;
   final handleTap;
   HomeQuickAccessButton(
       {super.key,
       this.icon = "",
       required this.title,
       required this.subTitle,
-      required this.borderColor,
+      this.borderColor = Colors.transparent,
       this.handleTap,
       this.subText});
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sell_pro/src/features/home/presentation/widgets/home_quick_access_button.dart';
 import 'package:sell_pro/src/features/home/presentation/widgets/quick_access_items.dart';
 import '../widgets/home_list_access_items.dart';
 
@@ -18,7 +19,7 @@ class _HomePageState extends ConsumerState<HomePage> {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
               Placeholder(
@@ -59,7 +60,10 @@ class _HomePageState extends ConsumerState<HomePage> {
               const SizedBox(
                 height: 15,
               ),
-              const HomeListAccessItems()
+              const HomeListAccessItems(),
+              SizedBox(
+                height: 150,
+              )
             ],
           ),
         ));
