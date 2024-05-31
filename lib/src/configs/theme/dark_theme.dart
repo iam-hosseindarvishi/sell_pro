@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:sell_pro/src/configs/theme/light_theme.dart';
 
 // final primary = HexColor("#3C404B");
 // final onPrimary = HexColor("#c9f9ff");
@@ -38,7 +37,7 @@ ThemeData darkTheme = ThemeData(
     //text button theme
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        overlayColor: MaterialStatePropertyAll<Color>(Colors.white38),
+        overlayColor: const MaterialStatePropertyAll<Color>(Colors.white38),
         foregroundColor: MaterialStatePropertyAll<Color>(onBackgroundColor),
         // backgroundColor: MaterialStatePropertyAll<Color>(primaryColor)
       ),

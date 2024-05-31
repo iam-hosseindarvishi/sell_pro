@@ -49,7 +49,7 @@ class LoginPage extends StatelessWidget {
                   ElevatedButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.login),
-                      label: Text(
+                      label: const Text(
                         "ورود به حساب کاربری",
                       )),
                   const SizedBox(height: 10.0),
@@ -57,7 +57,7 @@ class LoginPage extends StatelessWidget {
                   OutlinedButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.phone_android),
-                      label: Text(
+                      label: const Text(
                         "ورود با شماره تلفن",
                       )),
                   const SizedBox(
@@ -66,7 +66,7 @@ class LoginPage extends StatelessWidget {
                   TextButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.person),
-                      label: Text(
+                      label: const Text(
                         "ثبت نام نکرده اید ؟ ثبت نام کنید",
                       ))
                 ],

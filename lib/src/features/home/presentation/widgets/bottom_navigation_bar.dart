@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:sell_pro/src/features/home/presentation/providers/bottom_navigation_state_provider.dart';
 
 class HomeBottomNavitaionBar extends ConsumerWidget {

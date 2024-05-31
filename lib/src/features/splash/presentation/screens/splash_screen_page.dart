@@ -5,7 +5,6 @@ import 'package:sell_pro/src/features/home/presentation/screens/home.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
 
-import '../../../../shared/widgets/primary_elevated_button.dart';
 
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({super.key});
@@ -57,7 +56,7 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const LoginPage(),
                             ));
                       },
-                      child: Text(
+                      child: const Text(
                         "ورود به حساب کاربری",
                       )),
                   const SizedBox(
@@ -71,7 +70,7 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const RegisterPage(),
                             ));
                       },
-                      child: Text("ایجاد حساب کاربری جدید")),
+                      child: const Text("ایجاد حساب کاربری جدید")),
                   const SizedBox(
                     height: 10.00,
                   ),
@@ -82,7 +81,7 @@ class SplashScreenPage extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => const Home()));
                       },
-                      child: Text(
+                      child: const Text(
                         "ورود به عنوان مهمان",
                       ))
                 ],
