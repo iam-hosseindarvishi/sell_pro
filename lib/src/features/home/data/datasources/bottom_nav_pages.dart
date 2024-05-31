@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sell_pro/src/features/People/presentation/screens/people_screen.dart';
 import 'package:sell_pro/src/features/home/presentation/screens/home_page.dart';
 
 final pages = [
   const HomePage(),
-  const Center(
-    child: Text('شما در اشخاص هستید'),
-  ),
+  const PeopleScreen(),
   const Center(
     child: Text('شما در کالاها هستید'),
   ),

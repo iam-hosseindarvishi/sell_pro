@@ -21,7 +21,7 @@ class MyApp extends ConsumerWidget {
       title: 'Sell Pro',
       themeMode: themeMode,
       darkTheme: darkTheme,
-      theme: lightTheme.copyWith(),
+      theme: lightTheme,
       home: const SplashScreenPage(),
     );
   }
