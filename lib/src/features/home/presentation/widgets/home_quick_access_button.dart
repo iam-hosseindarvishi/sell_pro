@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 
-class QuickAccessMenuItem extends StatelessWidget {
+class HomeQuickAccessButton extends StatelessWidget {
   final String icon;
   final String title;
-  final String subTitle;
+  String? subTitle;
   String? subText;
   final Color borderColor;
-  QuickAccessMenuItem(
+  final handleTap;
+  HomeQuickAccessButton(
       {super.key,
-      required this.icon,
+      this.icon = "",
       required this.title,
       required this.subTitle,
       required this.borderColor,
+      this.handleTap,
       this.subText});
 
   @override
@@ -23,15 +25,17 @@ class QuickAccessMenuItem extends StatelessWidget {
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-                blurStyle: BlurStyle.solid,
-                color: Theme.of(context).colorScheme.onPrimary.withOpacity(.3),
-                blurRadius: 1)
+                blurStyle: BlurStyle.outer,
+                color:
+                    Theme.of(context).colorScheme.onBackground.withOpacity(.5),
+                blurRadius: 2)
           ],
-          color: Theme.of(context).colorScheme.primary,
+          color: Theme.of(context).colorScheme.background,
           borderRadius: BorderRadius.circular(5),
           border: Border(right: BorderSide(color: borderColor, width: 5)),
         ),
         child: InkWell(
+          onTap: handleTap,
           overlayColor: MaterialStatePropertyAll<Color>(
               Theme.of(context).colorScheme.surface),
           child: Row(
@@ -59,7 +63,7 @@ class QuickAccessMenuItem extends StatelessWidget {
                         color: Theme.of(context).colorScheme.onPrimary),
                   ),
                   Text(
-                    subTitle,
+                    subTitle ?? "",
                     maxLines: 1,
                     softWrap: true,
                     style: TextStyle(
