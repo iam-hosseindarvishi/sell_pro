@@ -57,8 +57,9 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const LoginPage(),
                             ));
                       },
-                      child: Text("ورود به حساب کاربری",
-                          style: Theme.of(context).textTheme.labelMedium)),
+                      child: Text(
+                        "ورود به حساب کاربری",
+                      )),
                   const SizedBox(
                     height: 10.00,
                   ),
@@ -70,8 +71,7 @@ class SplashScreenPage extends StatelessWidget {
                               builder: (context) => const RegisterPage(),
                             ));
                       },
-                      child: Text("ایجاد حساب کاربری جدید",
-                          style: Theme.of(context).textTheme.labelMedium)),
+                      child: Text("ایجاد حساب کاربری جدید")),
                   const SizedBox(
                     height: 10.00,
                   ),
@@ -82,14 +82,9 @@ class SplashScreenPage extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => const Home()));
                       },
-                      child: Text("ورود به عنوان مهمان",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelMedium
-                              ?.copyWith(
-                                  color: Theme.of(context)
-                                      .colorScheme
-                                      .onBackground)))
+                      child: Text(
+                        "ورود به عنوان مهمان",
+                      ))
                 ],
               ),
             ),

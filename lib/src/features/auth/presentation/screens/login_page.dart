@@ -49,33 +49,26 @@ class LoginPage extends StatelessWidget {
                   ElevatedButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.login),
-                      label: Text("ورود به حساب کاربری",
-                          style: Theme.of(context).textTheme.headlineMedium)),
+                      label: Text(
+                        "ورود به حساب کاربری",
+                      )),
                   const SizedBox(height: 10.0),
                   // buttons
                   OutlinedButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.phone_android),
-                      label: Text("ورود با شماره تلفن",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelMedium
-                              ?.copyWith(
-                                  color:
-                                      Theme.of(context).colorScheme.primary))),
+                      label: Text(
+                        "ورود با شماره تلفن",
+                      )),
                   const SizedBox(
                     height: 20.0,
                   ),
                   TextButton.icon(
                       onPressed: () {},
                       icon: const Icon(Icons.person),
-                      label: Text("ثبت نام نکرده اید ؟ ثبت نام کنید",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(
-                                  color:
-                                      Theme.of(context).colorScheme.primary)))
+                      label: Text(
+                        "ثبت نام نکرده اید ؟ ثبت نام کنید",
+                      ))
                 ],
               ),
             ),
