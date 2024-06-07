@@ -15,6 +15,7 @@ final onSecondaryColor = HexColor("#606467");
 final errorColor = HexColor("#E62815");
 final onErrorColor = HexColor("313B44");
 ThemeData darkTheme = ThemeData(
+    scaffoldBackgroundColor: surfaceColor,
     useMaterial3: true,
     colorScheme: ColorScheme.dark(
         primary: primaryColor,
