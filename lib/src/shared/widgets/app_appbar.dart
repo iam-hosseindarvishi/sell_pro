@@ -29,6 +29,5 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize =>
-      Size.fromHeight(MediaQuery.sizeOf(context).height * 0.06);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
 }
