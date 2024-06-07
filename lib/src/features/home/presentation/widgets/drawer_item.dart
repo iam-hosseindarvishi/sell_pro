@@ -15,8 +15,8 @@ class DrawerItem extends StatelessWidget {
     return InkWell(
       onTap: handleTab,
       child: ListTile(
-        iconColor: Theme.of(context).colorScheme.onBackground,
-        textColor: Theme.of(context).colorScheme.onBackground,
+        iconColor: Theme.of(context).colorScheme.onSurface,
+        textColor: Theme.of(context).colorScheme.onSurface,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,

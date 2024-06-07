@@ -9,9 +9,9 @@ class HomeBottomNavitaionBar extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final indexBottomNavbar = ref.watch(indexBottomNavbarProvider);
     return BottomNavigationBar(
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      selectedItemColor: Theme.of(context).colorScheme.onSecondary,
-      unselectedItemColor: Theme.of(context).colorScheme.onSurface,
+      backgroundColor: Theme.of(context).colorScheme.primary,
+      selectedItemColor: Theme.of(context).colorScheme.secondary,
+      unselectedItemColor: Theme.of(context).colorScheme.onPrimary,
       selectedLabelStyle:
           const TextStyle(fontFamily: "IranSans", fontWeight: FontWeight.bold),
       unselectedLabelStyle: const TextStyle(

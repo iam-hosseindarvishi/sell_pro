@@ -27,13 +27,13 @@ class ImagePickerButton extends StatelessWidget {
           Icon(
             size: iconSize,
             icon,
-            color: Theme.of(context).colorScheme.onBackground,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
           Text(
             text,
             style: TextStyle(
                 fontFamily: "Sahel",
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
                 fontSize: fontSize,
                 fontWeight: fontWeight),
           )

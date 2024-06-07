@@ -43,7 +43,7 @@ class _HomePageState extends ConsumerState<HomePage> {
               ),
               Text("منو دسترسی سریع",
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontFamily: "IranSans")),
               const SizedBox(
                 height: 15,
@@ -55,13 +55,13 @@ class _HomePageState extends ConsumerState<HomePage> {
               ),
               Text("لیست ها",
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontFamily: "IranSans")),
               const SizedBox(
                 height: 15,
               ),
               const HomeListAccessItems(),
-              SizedBox(
+              const SizedBox(
                 height: 150,
               )
             ],

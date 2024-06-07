@@ -6,10 +6,8 @@ import 'package:hexcolor/hexcolor.dart';
 final primaryColor = HexColor("#e6ba23");
 final onPrimaryColor = HexColor("#272525");
 final inversPrimaryColor = HexColor("#010407");
-final backgroundColor = HexColor("#f6f6f6");
-final onBackgroundColor = HexColor("#424a3a");
-final surfaceColor = HexColor("#272e44");
-final onSurfaceColor = HexColor("#c9f9ff");
+final surfaceColor = HexColor("#f6f6f6");
+final onSurfaceColor = HexColor("#424a3a");
 final inverseSurfaceColor = HexColor("#c9f9ff");
 final onInverseSurfaceColor = HexColor("#424a3a");
 final secondaryColor = HexColor("#424a3a");
@@ -19,12 +17,10 @@ final onErrorColor = HexColor("1e1e1e");
 ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     colorScheme: ColorScheme.light(
-        background: backgroundColor,
         primary: primaryColor,
         onPrimary: onPrimaryColor,
         inversePrimary: inversPrimaryColor,
-        primaryContainer: backgroundColor,
-        onBackground: onBackgroundColor,
+        primaryContainer: surfaceColor,
         surface: surfaceColor,
         inverseSurface: inverseSurfaceColor,
         onSurface: onSurfaceColor,
@@ -37,30 +33,30 @@ ThemeData lightTheme = ThemeData(
     //filled button theme
     filledButtonTheme: FilledButtonThemeData(
       style: ButtonStyle(
-          overlayColor: MaterialStatePropertyAll<Color>(secondaryColor),
-          foregroundColor: MaterialStatePropertyAll<Color>(onPrimaryColor),
-          backgroundColor: MaterialStatePropertyAll<Color>(primaryColor)),
+          overlayColor: WidgetStatePropertyAll<Color>(secondaryColor),
+          foregroundColor: WidgetStatePropertyAll<Color>(onPrimaryColor),
+          backgroundColor: WidgetStatePropertyAll<Color>(primaryColor)),
     ),
     //outlined button theme
     outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-      foregroundColor: onBackgroundColor,
-      side: BorderSide(color: onBackgroundColor),
+      foregroundColor: onSurfaceColor,
+      side: BorderSide(color: onSurfaceColor),
     )),
     //text button theme
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        overlayColor: const MaterialStatePropertyAll<Color>(Colors.white38),
-        foregroundColor: MaterialStatePropertyAll<Color>(onBackgroundColor),
+        overlayColor: const WidgetStatePropertyAll<Color>(Colors.white38),
+        foregroundColor: WidgetStatePropertyAll<Color>(onSurfaceColor),
         // backgroundColor: MaterialStatePropertyAll<Color>(primaryColor)
       ),
     ),
     //elevatedButton theme
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-          overlayColor: MaterialStatePropertyAll<Color>(secondaryColor),
-          foregroundColor: MaterialStatePropertyAll<Color>(onPrimaryColor),
-          backgroundColor: MaterialStatePropertyAll<Color>(primaryColor)),
+          overlayColor: WidgetStatePropertyAll<Color>(secondaryColor),
+          foregroundColor: WidgetStatePropertyAll<Color>(onPrimaryColor),
+          backgroundColor: WidgetStatePropertyAll<Color>(primaryColor)),
     ));
 
 // text theme

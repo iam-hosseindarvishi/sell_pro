@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class HomeQuickAccessButton extends StatelessWidget {
@@ -25,8 +27,7 @@ class HomeQuickAccessButton extends StatelessWidget {
           boxShadow: [
             BoxShadow(
                 blurStyle: BlurStyle.outer,
-                color:
-                    Theme.of(context).colorScheme.onBackground.withOpacity(.5),
+                color: Theme.of(context).colorScheme.onSurface.withOpacity(.5),
                 blurRadius: 2)
           ],
           borderRadius: BorderRadius.circular(5),
@@ -44,8 +45,8 @@ class HomeQuickAccessButton extends StatelessWidget {
               children: [
                 Image(
                   image: AssetImage(icon),
-                  height: 36,
-                  width: 36,
+                  height: MediaQuery.sizeOf(context).height * .08,
+                  width: MediaQuery.sizeOf(context).width * .07,
                 ),
                 const SizedBox(
                   width: 10,

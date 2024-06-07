@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'home_list_access_button.dart';
-import 'home_quick_access_button.dart';
 
 class HomeListAccessItems extends StatelessWidget {
   const HomeListAccessItems({
@@ -69,7 +68,7 @@ class HomeListAccessItems extends StatelessWidget {
         Divider(
           endIndent: 20,
           indent: 20,
-          color: Theme.of(context).colorScheme.onBackground,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
         HomeListAccessButton(
           handleTab: () {},
@@ -87,7 +86,7 @@ class HomeListAccessItems extends StatelessWidget {
         Divider(
           endIndent: 20,
           indent: 20,
-          color: Theme.of(context).colorScheme.onBackground,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
         HomeListAccessButton(
           handleTab: () {},

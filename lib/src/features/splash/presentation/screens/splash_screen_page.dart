@@ -39,7 +39,7 @@ class SplashScreenPage extends StatelessWidget {
                   Text(
                     "برای شروع لطفا یکی از گزینه های زیر را انتخاب کنید",
                     style: TextStyle(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 16,
                         fontFamily: "IranSans",
                         fontWeight: FontWeight.bold),

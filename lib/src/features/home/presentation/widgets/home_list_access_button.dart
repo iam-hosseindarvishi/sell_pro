@@ -24,7 +24,7 @@ class HomeListAccessButton extends StatelessWidget {
         boxShadow: [
           BoxShadow(
               blurStyle: BlurStyle.outer,
-              color: Theme.of(context).colorScheme.onBackground.withOpacity(.5),
+              color: Theme.of(context).colorScheme.onSurface.withOpacity(.5),
               blurRadius: 2)
         ],
         borderRadius: BorderRadius.circular(5),
@@ -44,7 +44,7 @@ class HomeListAccessButton extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
                     fontFamily: "IranSans",
-                    color: Theme.of(context).colorScheme.onBackground),
+                    color: Theme.of(context).colorScheme.onSurface),
               ),
               Text(
                 subTitle,
@@ -54,7 +54,7 @@ class HomeListAccessButton extends StatelessWidget {
                     fontFamily: "IranSans",
                     color: Theme.of(context)
                         .colorScheme
-                        .onBackground
+                        .onSurface
                         .withOpacity(.8)),
               )
             ],
