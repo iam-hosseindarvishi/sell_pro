@@ -3,19 +3,20 @@ import 'package:hexcolor/hexcolor.dart';
 
 // final primary = HexColor("#8d8d8d");
 // final onPrimary = HexColor("#1d1d1d");
-final primaryColor = HexColor("#e6ba23");
-final onPrimaryColor = HexColor("#272525");
-final inversPrimaryColor = HexColor("#010407");
-final surfaceColor = HexColor("#f6f6f6");
-final onSurfaceColor = HexColor("#424a3a");
-final inverseSurfaceColor = HexColor("#c9f9ff");
-final onInverseSurfaceColor = HexColor("#424a3a");
-final secondaryColor = HexColor("#424a3a");
-final onSecondaryColor = HexColor("#be5136");
-final errorColor = HexColor("#b52127");
-final onErrorColor = HexColor("1e1e1e");
+final primaryColor = HexColor("#FDD83A");
+final onPrimaryColor = HexColor("#41444B");
+final inversPrimaryColor = HexColor("#0227c5");
+final surfaceColor = HexColor("#F6F4E6"); //background
+final onSurfaceColor = HexColor("#52575D");
+final inverseSurfaceColor = HexColor("#090b19");
+final onInverseSurfaceColor = HexColor("#ada8a2");
+final secondaryColor = HexColor("#FFBB00");
+final onSecondaryColor = HexColor("#1A3365");
+final errorColor = HexColor("#FF4343");
+final onErrorColor = HexColor("FFFFFF");
 ThemeData lightTheme = ThemeData(
     useMaterial3: true,
+    scaffoldBackgroundColor: surfaceColor,
     colorScheme: ColorScheme.light(
         primary: primaryColor,
         onPrimary: onPrimaryColor,
