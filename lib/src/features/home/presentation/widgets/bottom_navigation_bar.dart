@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:sell_pro/src/features/home/presentation/providers/bottom_navigation_state_provider.dart';
 
 class HomeBottomNavitaionBar extends ConsumerWidget {
@@ -9,9 +10,9 @@ class HomeBottomNavitaionBar extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final indexBottomNavbar = ref.watch(indexBottomNavbarProvider);
     return BottomNavigationBar(
-      backgroundColor: Theme.of(context).colorScheme.primary,
+      backgroundColor: HexColor("#313B44"),
       selectedItemColor: Theme.of(context).colorScheme.secondary,
-      unselectedItemColor: Theme.of(context).colorScheme.onPrimary,
+      unselectedItemColor: HexColor("#AAA8AD"),
       selectedLabelStyle:
           const TextStyle(fontFamily: "IranSans", fontWeight: FontWeight.bold),
       unselectedLabelStyle: const TextStyle(

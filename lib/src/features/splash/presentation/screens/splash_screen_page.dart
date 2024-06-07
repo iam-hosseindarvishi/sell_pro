@@ -22,9 +22,7 @@ class SplashScreenPage extends StatelessWidget {
                   fontWeight: FontWeight.bold, fontFamily: "IranSans"),
             ),
             centerTitle: true,
-            actions: [
-              ThemeToggler(iconColor: Theme.of(context).colorScheme.onSurface)
-            ],
+            actions: [ThemeToggler()],
           ),
           body: Center(
             child: Padding(

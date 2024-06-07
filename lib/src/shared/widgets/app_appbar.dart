@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget? title;
@@ -19,8 +20,8 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
         title: title,
         centerTitle: centerTitle,
-        backgroundColor: Theme.of(context).colorScheme.surface,
-        foregroundColor: Theme.of(context).colorScheme.onSurface,
+        backgroundColor: HexColor("#313B44"),
+        foregroundColor: HexColor("#AAA8AD"),
         leading: leading,
         elevation: 50,
         actions: actions);

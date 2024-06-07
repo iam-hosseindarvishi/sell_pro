@@ -17,6 +17,8 @@ final onErrorColor = HexColor("FFFFFF");
 ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     scaffoldBackgroundColor: surfaceColor,
+    primaryColorDark: HexColor("#313B44"),
+    primaryColorLight: primaryColor,
     colorScheme: ColorScheme.light(
         primary: primaryColor,
         onPrimary: onPrimaryColor,

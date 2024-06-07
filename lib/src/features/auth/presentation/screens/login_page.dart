@@ -20,9 +20,7 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.normal, fontFamily: "IranSans"),
             ),
             centerTitle: true,
-            actions: [
-              ThemeToggler(iconColor: Theme.of(context).colorScheme.onSurface)
-            ],
+            actions: [ThemeToggler()],
           ),
           body: Padding(
             padding:

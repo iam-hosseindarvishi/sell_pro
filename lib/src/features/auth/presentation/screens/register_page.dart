@@ -21,9 +21,7 @@ class RegisterPage extends StatelessWidget {
                     fontWeight: FontWeight.normal, fontFamily: "IranSams"),
               ),
               centerTitle: true,
-              actions: [
-                ThemeToggler(iconColor: Theme.of(context).colorScheme.onSurface)
-              ],
+              actions: [ThemeToggler()],
             ),
             body: Padding(
               padding:

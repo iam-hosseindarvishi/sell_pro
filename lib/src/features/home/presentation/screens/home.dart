@@ -27,10 +27,7 @@ class Home extends ConsumerWidget {
               "کاربر مهمان",
               style: TextStyle(fontFamily: "IranSans"),
             ),
-            actions: [
-              ThemeToggler(iconColor: Theme.of(context).colorScheme.onSurface),
-              const NotificationAppbarButton()
-            ],
+            actions: [ThemeToggler(), const NotificationAppbarButton()],
           ),
           body: pages[indexBottomNavbar],
           bottomNavigationBar: const HomeBottomNavitaionBar(),
