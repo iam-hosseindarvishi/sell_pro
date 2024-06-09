@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:hexcolor/hexcolor.dart';
+import 'package:sell_pro/src/configs/theme/dark%20theme/dark_theme_colors.dart';
 import 'package:sell_pro/src/configs/theme/theme_mode_provider.dart';
 
 class ThemeToggler extends StatelessWidget {
-  const ThemeToggler({super.key});
+  final Color? iconColor;
+
+  ThemeToggler({super.key, this.iconColor});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class ThemeToggler extends StatelessWidget {
           },
           icon: Icon(
             theme == ThemeMode.dark ? Icons.light_mode : Icons.dark_mode,
-            color: HexColor("#AAA8AD"),
+            color: iconColor ?? DarkThemeColors.onSurfaceColor.withOpacity(.6),
           ));
     });
   }

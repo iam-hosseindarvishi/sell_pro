@@ -61,7 +61,7 @@ class HomeQuickAccessButton extends StatelessWidget {
                           fontFamily: "IranSans",
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
-                          color: Theme.of(context).colorScheme.onPrimary),
+                          color: Theme.of(context).colorScheme.onSurface),
                     ),
                     Text(
                       subTitle ?? "",
@@ -73,7 +73,7 @@ class HomeQuickAccessButton extends StatelessWidget {
                           fontSize: 14,
                           color: Theme.of(context)
                               .colorScheme
-                              .onPrimary
+                              .onSurface
                               .withOpacity(.8)),
                     ),
                     Text(
@@ -86,7 +86,7 @@ class HomeQuickAccessButton extends StatelessWidget {
                           fontSize: 14,
                           color: Theme.of(context)
                               .colorScheme
-                              .onPrimary
+                              .onSurface
                               .withOpacity(.8)),
                     ),
                   ],

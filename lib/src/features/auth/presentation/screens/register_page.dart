@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
-import '../../../../shared/widgets/app_text_field.dart';
+import '../../../../shared/widgets/text_fields/app_text_field.dart';
 import '../../../../shared/widgets/theme_toggler_button.dart';
 import '../../../../shared/widgets/image_picker/image_picker.dart';
 

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
+import '../../configs/theme/dark theme/dark_theme_colors.dart';
+
 class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget? title;
   Widget? leading;
@@ -20,8 +22,8 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
         title: title,
         centerTitle: centerTitle,
-        backgroundColor: HexColor("#313B44"),
-        foregroundColor: HexColor("#AAA8AD"),
+        backgroundColor: DarkThemeColors.appBarBg,
+        foregroundColor: DarkThemeColors.onSurfaceColor.withOpacity(.6),
         leading: leading,
         elevation: 50,
         actions: actions);

@@ -1,65 +1,62 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:sell_pro/src/configs/theme/dark%20theme/dark_theme_colors.dart';
 
-// final primary = HexColor("#8d8d8d");
-// final onPrimary = HexColor("#1d1d1d");
-final primaryColor = HexColor("#FDD83A");
-final onPrimaryColor = HexColor("#41444B");
-final inversPrimaryColor = HexColor("#0227c5");
-final surfaceColor = HexColor("#F6F4E6"); //background
-final onSurfaceColor = HexColor("#52575D");
-final inverseSurfaceColor = HexColor("#090b19");
-final onInverseSurfaceColor = HexColor("#ada8a2");
-final secondaryColor = HexColor("#FFBB00");
-final onSecondaryColor = HexColor("#1A3365");
-final errorColor = HexColor("#FF4343");
-final onErrorColor = HexColor("FFFFFF");
-ThemeData lightTheme = ThemeData(
+import '../light theme/light_theme_colors.dart';
+
+ThemeData darkTheme = ThemeData(
+    scaffoldBackgroundColor: DarkThemeColors.surfaceColor,
     useMaterial3: true,
-    scaffoldBackgroundColor: surfaceColor,
-    primaryColorDark: HexColor("#313B44"),
-    primaryColorLight: primaryColor,
-    colorScheme: ColorScheme.light(
-        primary: primaryColor,
-        onPrimary: onPrimaryColor,
-        inversePrimary: inversPrimaryColor,
-        primaryContainer: surfaceColor,
-        surface: surfaceColor,
-        inverseSurface: inverseSurfaceColor,
-        onSurface: onSurfaceColor,
-        secondary: secondaryColor,
-        onSecondary: onSecondaryColor,
-        onInverseSurface: onInverseSurfaceColor,
-        error: errorColor,
-        onError: onErrorColor),
+    primaryColorDark: DarkThemeColors.primaryColor,
+    primaryColorLight: LightThemeColors.primaryColor,
+    colorScheme: ColorScheme.dark(
+        primary: DarkThemeColors.primaryColor,
+        inversePrimary: DarkThemeColors.inversePrimaryColor,
+        onPrimary: DarkThemeColors.onPrimaryColor,
+        primaryContainer: DarkThemeColors.surfaceColor,
+        surface: DarkThemeColors.surfaceColor,
+        inverseSurface: DarkThemeColors.inversSurfaceColor,
+        onSurface: DarkThemeColors.onSurfaceColor,
+        secondary: DarkThemeColors.secondaryColor,
+        onSecondary: DarkThemeColors.onSecondaryColor,
+        onInverseSurface: DarkThemeColors.onInverseSurfaceColor,
+        error: DarkThemeColors.errorColor,
+        onError: DarkThemeColors.onErrorColor),
     textTheme: textTheme,
-    //filled button theme
-    filledButtonTheme: FilledButtonThemeData(
-      style: ButtonStyle(
-          overlayColor: WidgetStatePropertyAll<Color>(secondaryColor),
-          foregroundColor: WidgetStatePropertyAll<Color>(onPrimaryColor),
-          backgroundColor: WidgetStatePropertyAll<Color>(primaryColor)),
-    ),
-    //outlined button theme
-    outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-      foregroundColor: onSurfaceColor,
-      side: BorderSide(color: onSurfaceColor),
-    )),
     //text button theme
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
         overlayColor: const WidgetStatePropertyAll<Color>(Colors.white38),
-        foregroundColor: WidgetStatePropertyAll<Color>(onSurfaceColor),
+        foregroundColor:
+            WidgetStatePropertyAll<Color>(DarkThemeColors.onSurfaceColor),
         // backgroundColor: MaterialStatePropertyAll<Color>(primaryColor)
       ),
+    ),
+    //outlined button theme
+    outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+      foregroundColor: DarkThemeColors.onSurfaceColor,
+      side: BorderSide(color: DarkThemeColors.onSurfaceColor),
+    )),
+    //filled button
+    filledButtonTheme: FilledButtonThemeData(
+      style: ButtonStyle(
+          overlayColor:
+              WidgetStatePropertyAll<Color>(DarkThemeColors.secondaryColor),
+          foregroundColor:
+              WidgetStatePropertyAll<Color>(DarkThemeColors.onPrimaryColor),
+          backgroundColor:
+              WidgetStatePropertyAll<Color>(DarkThemeColors.primaryColor)),
     ),
     //elevatedButton theme
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-          overlayColor: WidgetStatePropertyAll<Color>(secondaryColor),
-          foregroundColor: WidgetStatePropertyAll<Color>(onPrimaryColor),
-          backgroundColor: WidgetStatePropertyAll<Color>(primaryColor)),
+          overlayColor:
+              WidgetStatePropertyAll<Color>(DarkThemeColors.secondaryColor),
+          foregroundColor:
+              WidgetStatePropertyAll<Color>(DarkThemeColors.onPrimaryColor),
+          backgroundColor:
+              WidgetStatePropertyAll<Color>(DarkThemeColors.primaryColor)),
     ));
 
 // text theme

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sell_pro/src/configs/theme/dark_theme.dart';
-import 'package:sell_pro/src/configs/theme/light_theme.dart';
+import 'package:sell_pro/src/configs/theme/dark%20theme/dark_theme.dart';
+import 'package:sell_pro/src/configs/theme/light%20theme/light_theme.dart';
 import 'package:sell_pro/src/configs/theme/theme_mode_provider.dart';
 import 'src/features/splash/presentation/screens/splash_screen_page.dart';
 
