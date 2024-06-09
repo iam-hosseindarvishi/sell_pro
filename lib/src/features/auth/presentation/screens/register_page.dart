@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import '../../../../shared/widgets/app_text_field.dart';
 import '../../../../shared/widgets/theme_toggler_button.dart';
-import '../widgets/logo_image_picker.dart';
+import '../../../../shared/widgets/image_picker/image_picker.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});

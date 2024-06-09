@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'image_picker_dialog.dart';
+import 'picker_dialog.dart';
 
 class ImagePicker extends StatelessWidget {
   const ImagePicker({
@@ -15,12 +15,12 @@ class ImagePicker extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),
             border: Border.all(
-                width: 2, color: Theme.of(context).colorScheme.primary)),
+                width: 1, color: Theme.of(context).colorScheme.inversePrimary)),
         child: Center(
           child: Icon(
             size: 50.0,
             Icons.camera_alt,
-            color: Theme.of(context).colorScheme.primary,
+            color: Theme.of(context).colorScheme.secondary,
           ),
         ),
       ),
