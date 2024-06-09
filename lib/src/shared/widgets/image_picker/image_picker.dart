@@ -15,7 +15,7 @@ class ImagePicker extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),
             border: Border.all(
-                width: 1, color: Theme.of(context).colorScheme.inversePrimary)),
+                width: 1, color: Theme.of(context).colorScheme.onSurface)),
         child: Center(
           child: Icon(
             size: 50.0,

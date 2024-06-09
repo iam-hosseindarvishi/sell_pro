@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:sell_pro/src/configs/theme/dark%20theme/dark_theme_colors.dart';
 
 class SearchInAppbar extends StatefulWidget {
   final String hintText;
@@ -28,12 +29,12 @@ class _SearchInAppbarState extends State<SearchInAppbar> {
           borderRadius: BorderRadius.circular(5),
           border: Border(
               left: BorderSide.none,
-              bottom: BorderSide(
-                  width: 1, color: Theme.of(context).colorScheme.onPrimary),
-              right: BorderSide(
-                  width: 1, color: Theme.of(context).colorScheme.onPrimary),
-              top: BorderSide(
-                  width: 1, color: Theme.of(context).colorScheme.onPrimary))),
+              bottom:
+                  BorderSide(width: 1, color: DarkThemeColors.onSurfaceColor),
+              right:
+                  BorderSide(width: 1, color: DarkThemeColors.onSurfaceColor),
+              top:
+                  BorderSide(width: 1, color: DarkThemeColors.onSurfaceColor))),
       child: Row(
         children: [
           Expanded(
@@ -41,10 +42,14 @@ class _SearchInAppbarState extends State<SearchInAppbar> {
               controller: _controller,
               decoration: InputDecoration(
                 hintText: widget.hintText,
+                hintStyle: TextStyle(
+                    color: DarkThemeColors.onSurfaceColor,
+                    fontFamily: "IranSans"),
                 border: InputBorder.none,
               ),
-              style:
-                  TextStyle(color: HexColor("#AAA8AD"), fontFamily: "IranSans"),
+              style: TextStyle(
+                  color: DarkThemeColors.onSurfaceColor,
+                  fontFamily: "IranSans"),
               keyboardType: TextInputType.name,
               onChanged: (value) {
                 setState(() {});
