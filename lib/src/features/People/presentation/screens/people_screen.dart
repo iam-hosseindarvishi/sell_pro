@@ -1,3 +1,4 @@
+import 'package:sell_pro/src/features/People/presentation/screens/peaple_form_screen.dart';
 import "package:sell_pro/src/shared/widgets/segmented_button.dart";
 import 'package:flutter/material.dart';
 
@@ -34,8 +35,14 @@ class _PeopleScreenState extends State<PeopleScreen> {
                   elevation: 5,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50)),
-                  child: Icon(Icons.person_add),
-                  onPressed: () {},
+                  child: const Icon(Icons.person_add),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const PeapleFormScreen(),
+                        ));
+                  },
                 ),
               ))
         ],
