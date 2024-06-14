@@ -6,6 +6,9 @@ import 'package:sell_pro/src/shared/widgets/image_picker/image_picker.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
 import 'package:sell_pro/src/shared/widgets/text_fields/form_text_field.dart';
 
+import '../../../../shared/widgets/form_widgets/form_bottom_appbar.dart';
+import '../../../../shared/widgets/form_widgets/form_floating_action_button.dart';
+
 class PeapleFormScreen extends StatefulWidget {
   const PeapleFormScreen({super.key});
 
@@ -151,35 +154,24 @@ class _PeapleFormScreenState extends State<PeapleFormScreen> {
             ),
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(50))),
-          backgroundColor: Theme.of(context).colorScheme.secondary,
-          foregroundColor: Theme.of(context).colorScheme.onSecondary,
-          onPressed: () {},
-          child: const Icon(Icons.save),
+        floatingActionButton: FormFloatingActionButton(
+          icon: const Icon(Icons.save),
+          handleOnPressed: () {},
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         extendBody: true,
         resizeToAvoidBottomInset: false,
-        bottomNavigationBar: Directionality(
-          textDirection: TextDirection.ltr,
-          child: BottomAppBar(
-              color: DarkThemeColors.appBarBg,
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              shape: const CircularNotchedRectangle(),
-              notchMargin: 8,
-              height: kBottomNavigationBarHeight,
-              child: Row(
-                children: [
-                  IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.help,
-                        color: DarkThemeColors.onSurfaceColor.withOpacity(.5),
-                      ))
-                ],
-              )),
+        bottomNavigationBar: FormBottomAppBar(
+          item: Row(
+            children: [
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.help,
+                    color: DarkThemeColors.onSurfaceColor.withOpacity(.5),
+                  ))
+            ],
+          ),
         ),
       ),
     ));
