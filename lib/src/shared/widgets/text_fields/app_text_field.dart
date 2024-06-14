@@ -35,7 +35,7 @@ class AppTextField extends StatelessWidget {
             hintText: hintText,
             hintStyle: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontFamily: "Sahel",
+                fontFamily: "IranSans",
                 fontSize: 15.0,
                 color: Theme.of(context).colorScheme.onPrimary),
             filled: true,

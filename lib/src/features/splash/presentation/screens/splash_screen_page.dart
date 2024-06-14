@@ -3,6 +3,7 @@ import 'package:sell_pro/src/features/auth/presentation/screens/login_page.dart'
 import 'package:sell_pro/src/features/auth/presentation/screens/register_page.dart';
 import 'package:sell_pro/src/features/home/presentation/screens/home.dart';
 import 'package:sell_pro/src/shared/widgets/app_appbar.dart';
+import 'package:sell_pro/src/shared/widgets/text_widgets/responsive_text.dart';
 import 'package:sell_pro/src/shared/widgets/theme_toggler_button.dart';
 
 class SplashScreenPage extends StatelessWidget {
@@ -34,14 +35,18 @@ class SplashScreenPage extends StatelessWidget {
                   const SizedBox(
                     height: 40.0,
                   ),
-                  Text(
-                    "برای شروع لطفا یکی از گزینه های زیر را انتخاب کنید",
-                    style: TextStyle(
-                        color: Theme.of(context).colorScheme.onSurface,
-                        fontSize: 16,
-                        fontFamily: "IranSans",
-                        fontWeight: FontWeight.bold),
-                  ),
+                  // Text(
+                  //   "برای شروع لطفا یکی از گزینه های زیر را انتخاب کنید",
+                  //   style: TextStyle(
+                  //       color: Theme.of(context).colorScheme.onSurface,
+                  //       fontSize: 16,
+                  //       fontFamily: "IranSans",
+                  //       fontWeight: FontWeight.bold),
+                  // ),
+                  const ResponsiveText(
+                      text:
+                          "برای شروع لطفا یکی از گزینه های زیر را انتخاب کنید",
+                      baseFontSize: 24),
                   const SizedBox(
                     height: 10.00,
                   ),
