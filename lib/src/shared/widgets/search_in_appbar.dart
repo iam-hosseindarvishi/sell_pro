@@ -58,14 +58,18 @@ class _SearchInAppbarState extends State<SearchInAppbar> {
             ),
           ),
           _controller.text == ""
-              ? Row(children: widget.actions)
+              ? Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: widget.actions,
+                )
               : IconButton(
                   onPressed: () {
                     setState(() {
                       _controller.text = "";
                     });
                   },
-                  icon: Icon(Icons.clear)),
+                  icon: const Icon(Icons.clear)),
         ],
       ),
     );
