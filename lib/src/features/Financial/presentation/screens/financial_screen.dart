@@ -1,16 +1,17 @@
-import 'package:sell_pro/src/configs/theme/dark%20theme/dark_theme_colors.dart';
-import 'package:sell_pro/src/features/People/presentation/screens/peaple_form_screen.dart';
-import "package:sell_pro/src/shared/widgets/segmented_button.dart";
 import 'package:flutter/material.dart';
+import 'package:sell_pro/src/features/Financial/presentation/screens/financial_form_screen.dart';
 
-class PeopleScreen extends StatefulWidget {
-  const PeopleScreen({super.key});
+import '../../../../configs/theme/dark theme/dark_theme_colors.dart';
+import '../../../../shared/widgets/segmented_button.dart';
+
+class FinancialScreen extends StatefulWidget {
+  const FinancialScreen({super.key});
 
   @override
-  State<PeopleScreen> createState() => _PeopleScreenState();
+  State<FinancialScreen> createState() => _FinancialScreenState();
 }
 
-class _PeopleScreenState extends State<PeopleScreen> {
+class _FinancialScreenState extends State<FinancialScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,9 +20,10 @@ class _PeopleScreenState extends State<PeopleScreen> {
         children: [
           AppSegmentedButton(
             childrens: const <dynamic, Widget>{
-              "all": Text("همه"),
-              "costumers": Text("مشتریان"),
-              "sellers": Text("فروشندگان")
+              "all": Text("هزینه ها"),
+              "check": Text("چک"),
+              "cash-desk": Text("صندوق"),
+              "bank-account": Text("حساب بانکی")
             },
             selected: "all",
           ),
@@ -41,7 +43,7 @@ class _PeopleScreenState extends State<PeopleScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const PeapleFormScreen(),
+                          builder: (context) => const FinancialFormScreen(),
                         ));
                   },
                 ),
@@ -49,5 +51,6 @@ class _PeopleScreenState extends State<PeopleScreen> {
         ],
       ),
     );
+    ;
   }
 }
